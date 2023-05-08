@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         int randInt = getIntent().getIntExtra("randIntKey", 0);
         TextView intText = findViewById(R.id.textView);
-        intText.setText("MAD " + randInt);
+        intText.setText("MAD" + randInt);
 
         Button followButton = findViewById(R.id.button);
         followButton.setOnClickListener(new View.OnClickListener(){
