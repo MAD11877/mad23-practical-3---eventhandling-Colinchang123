@@ -9,6 +9,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         User User1 = new User("John", "Person", 12, false);
         String Name = User1.getName();
         String Description = User1.getDescription();
+
+
 
         int randInt = getIntent().getIntExtra("randIntKey", 0);
         TextView intText = findViewById(R.id.textView);
